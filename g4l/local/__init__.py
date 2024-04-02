@@ -3,6 +3,7 @@ import random, string, time, re
 from ..typing import Union, Iterator, Messages
 from ..stubs  import ChatCompletion, ChatCompletionChunk
 from ._engine import LocalProvider
+from ._engines import LocalEngines
 from ._docs   import DocumentRetriever
 
 IterResponse = Iterator[Union[ChatCompletion, ChatCompletionChunk]]
